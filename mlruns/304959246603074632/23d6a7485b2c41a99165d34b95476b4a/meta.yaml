@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yannd/mlops-tp/mlruns/304959246603074632/23d6a7485b2c41a99165d34b95476b4a/artifacts
+end_time: 1760560192579
+entry_point_name: ''
+experiment_id: '304959246603074632'
+lifecycle_stage: active
+run_id: 23d6a7485b2c41a99165d34b95476b4a
+run_name: NaiveBayes
+run_uuid: 23d6a7485b2c41a99165d34b95476b4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760560188617
+status: 3
+tags: []
+user_id: yannd

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yannd/mlops-tp/mlruns/304959246603074632/25bb3d1b0d964c969235dcee70a69ac3/artifacts
+end_time: 1760560188617
+entry_point_name: ''
+experiment_id: '304959246603074632'
+lifecycle_stage: active
+run_id: 25bb3d1b0d964c969235dcee70a69ac3
+run_name: LogisticRegression
+run_uuid: 25bb3d1b0d964c969235dcee70a69ac3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760560182912
+status: 3
+tags: []
+user_id: yannd
