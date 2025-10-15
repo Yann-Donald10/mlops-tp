@@ -34,7 +34,7 @@ jobs:
         run: | 
           python src/load_data.py 
           python src/preprocess.py 
-          python src/train.py # La version avec MLflow 
+          python src/train.py 
           python src/evaluate.py 
       # Étape 5: Sauvegarder les résultats MLflow comme un artefact - name: Upload MLflow results 
         uses: actions/upload-artifact@v4 
