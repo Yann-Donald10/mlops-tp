@@ -26,14 +26,14 @@ if __name__ == "__main__":
     nb_predictions = nb_pipeline.predict(X_test) 
      
     print("\n--- Rapport de Classification (Naive Bayes) ---") 
-nb_report = classification_report(y_test, nb_predictions, target_names=['Négatif', 'Positif'], output_dict=True) 
-print(classification_report(y_test, nb_predictions, target_names=['Négatif', 'Positif'])) 
-# Affichage d'un tableau comparatif 
-print("\n--- Tableau Comparatif des Performances ---") 
-results = { 
-"Modèle":["Régression Logistique", "Naive Bayes"], 
-"Accuracy": [lr_report['accuracy'], nb_report['accuracy']], 
-"F1-Score (Pondéré)": [lr_report['weighted avg']['f1-score'], nb_report['weighted avg']['f1-score']] 
-} 
-results_df = pd.DataFrame(results) 
-print(results_df.to_string(index=False))
+    nb_report = classification_report(y_test, nb_predictions, target_names=['Négatif', 'Positif'], output_dict=True) 
+    print(classification_report(y_test, nb_predictions, target_names=['Négatif', 'Positif'])) 
+    # Affichage d'un tableau comparatif 
+    print("\n--- Tableau Comparatif des Performances ---") 
+    results = { 
+    "Modèle":["Régression Logistique", "Naive Bayes"], 
+    "Accuracy": [lr_report['accuracy'], nb_report['accuracy']], 
+    "F1-Score (Pondéré)": [lr_report['weighted avg']['f1-score'], nb_report['weighted avg']['f1-score']] 
+    } 
+    results_df = pd.DataFrame(results) 
+    print(results_df.to_string(index=False))
