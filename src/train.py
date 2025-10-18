@@ -6,8 +6,18 @@ from sklearn.pipeline import Pipeline
 import mlflow
 import mlflow.sklearn
 import os
+import shutil
 
-# Définir le nom de l'expérience MLflow
+# Supprimer tout ancien dossier mlruns (venant de Windows)
+if os.path.exists("mlruns"):
+    shutil.rmtree("mlruns")
+
+# Recréer un dossier propre
+os.makedirs("mlruns", exist_ok=True)
+
+# Config MLflow propre
+os.environ["MLFLOW_TRACKING_URI"] = "file:./mlruns"
+import mlflow
 mlflow.set_tracking_uri("file:./mlruns")
 mlflow.set_experiment("Analyse de Sentiments Twitter")
 
