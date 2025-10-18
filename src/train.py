@@ -8,6 +8,7 @@ import mlflow.sklearn
 import os
 
 # Définir le nom de l'expérience MLflow
+mlflow.set_tracking_uri("file:./mlruns")
 mlflow.set_experiment("Analyse de Sentiments Twitter")
 
 
